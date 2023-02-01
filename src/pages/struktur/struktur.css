@@ -1,0 +1,10 @@
+.container-struktur {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.container-struktur img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

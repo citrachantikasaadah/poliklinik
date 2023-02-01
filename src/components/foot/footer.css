@@ -1,0 +1,326 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.footer{
+    background-color: #B0E0E7;
+    /* max-width: 100%; */
+    padding: 20px 40px;
+    margin: auto;
+}
+
+.content-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer-box-social .logo-area{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.desc-area{
+    max-width: 450px;
+    margin-bottom: 1.25rem;
+}
+
+.desc-area p{
+    color: #263159;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.footer-social{}
+
+.footer-social a{
+    color: #263159;
+    margin-right: 22px;
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    background-color: #81b9c2;
+    text-align: center;
+    padding: 7px 10px 2px 10px;
+}
+
+.footer-social a:hover{
+    color: #dff6f6;
+}
+
+.link-area{
+    display: flex;
+    max-width: 100%s;
+}
+
+.link-header{
+    /* margin-left: 100px; */
+    /* padding: 20px; */
+    font-size: 17px;
+    margin-right: 60px;
+}
+
+li.link-name {
+    color: #263159;
+    font-weight: 700;
+}
+
+li.link-email{
+    align-items: center;
+    gap: 5px;
+    color: #263159;
+}
+li.link-phone{
+    align-items: center;
+    gap: 5px;
+    color: #263159;
+}
+
+.link-header li a{
+    color: #263159;
+    padding-bottom: 1px;
+    font-weight: 400;
+    align-items: center;
+    gap: 7px;
+    display: flex;
+    cursor: pointer;
+}
+
+.link-header li a:hover{
+    color: #1e4b4b;
+}
+
+.link-header li{
+    margin-bottom: 10px;
+}
+
+.footer hr{
+    height: 1px;
+    border: none;
+    background-color: #263159;
+    margin-bottom: 1rem;
+}
+
+.footer-bottom{
+    align-items: center;
+    font-size: 1rem;
+}
+
+.footer-copy{
+    color: #263159;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .content-footer{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .link-area{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .link-header{
+        margin-left: 0;
+        margin-right: 40px;
+    }
+
+    .footer-social{
+        margin-bottom: 1rem;
+    }
+
+    .footer-bottom{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .link-header{
+        margin-bottom: 8px;
+    }
+
+    .footer-copy{
+        margin-bottom: 8px;
+    }
+}
+
+
+/* .footer-box-social .logo-area img{
+} */
+
+
+
+/* *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.footer {
+    margin-top: 50px;
+}
+
+.hubungi{
+    display: flex;
+    width: 60%;
+    padding-left: 120px;
+}
+
+.judul{
+    color: #263159;
+    text-align: center;
+    padding-top: 18px;
+    font-size: 23px;
+}
+
+.judul h5{
+    color: #2CB9CC;
+    font-family: 'Yeseva One';
+    font-size: 18px;
+}
+
+.lingkaran_telepon{
+    height: 130px;
+    width: 130px;
+    background-color: #D1E8E4;
+    border-radius: 50%;
+    margin: 30px auto;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.lingkaran_telepon:hover{
+    background: radial-gradient(#2CB9CC 10%, #fff)
+    
+}
+
+.lingkaran_telepon img{
+    align-items: center;
+    padding: 28px 26px;
+    width: 60%;
+}
+
+.lingkaran_telepon p{
+    font-size: 13px;
+    padding-left: 6px;
+}
+
+
+.container{
+    color: #263159;
+    background-color: #2CB9CC;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-top: 35px;
+}
+
+.col{
+    font-size: 12px;
+    padding-left: 70px;
+    padding-bottom: 40px;
+}
+
+.col1{
+    padding-left: 60px;
+    width: 30%;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.col1 p{
+    padding-top: 5px;
+}
+
+.col p{
+    width: 30%;
+}
+
+.col_sm{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.row{
+    display: flex;
+}
+.list{
+    list-style: none;
+    padding-top: 6px;
+}
+
+.list li{
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 12px;
+    
+}
+
+.list a{
+    text-decoration: none;
+    color: #263159;
+    font-weight: 400;
+    font-size: 17px;
+    
+}
+
+.list a:hover{
+    color: #263159;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.list_sosmed{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+.list_kontak{
+    list-style: none;
+    padding-top: 5px;
+}
+
+.list_kontak li{
+    display: flex;
+    display: flex;
+    max-width: max-content;
+    align-items: center;
+    gap: 6px;
+    font-size: 20px;
+    padding-bottom: 6px;
+}
+
+.list_kontak li p{
+    font-size: 15px;
+    padding: 0px 5px;
+    width: 100%;
+    font-weight: 400;
+}
+
+
+h4{
+    font-size: 20px;
+    color: #263159;
+}
+
+ */

@@ -1,0 +1,42 @@
+.hero-back{
+    /* position: relative; */
+    /* height: 500px; */
+    /* overflow: hidden; */
+
+    /* padding-top: 168px; */
+}
+
+.hero{
+    justify-content: flex-start;
+    align-items: center;
+    color: #263159;
+    background: url("../../assets/gallery/back.jpg") no-repeat center;
+    background-size: cover;
+    z-index: 1;
+    height: 170px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+}
+
+.hero h1{
+    text-align: center;
+    font-size: 48px;
+    padding-top: 30px;
+    color: #263159;
+    font-family: 'Yeseva One';
+}
+
+.hero a{
+    font-size: 20px;
+    background-color: #263159;
+}
+
+.hero p{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.hero p a{
+    text-decoration: none;
+    background-color: none;
+}

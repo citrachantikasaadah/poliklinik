@@ -1,0 +1,42 @@
+
+/* .container h2{
+    text-align: center;
+    
+}
+
+.container{
+    padding: 80px 30px 10px;
+    color: #263159;
+} */
+
+.container-visimisi{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding: 20px 80px;
+}
+
+.container-visimisi img{
+    float: right ;
+    margin-left: 70px;
+    margin-top: 20px;
+    box-shadow: rgba(149, 157, 165, 70%) 0px 5px 20px;
+    border-radius: 20px;
+}
+
+.content-visimisi{
+    text-align: center;
+    color: #263159;
+    margin-top: 10px;
+    margin-right: 100px;
+}
+
+.content-visimisi h2{
+    margin-top: 20px;
+}
+
+.content-visimisi hr{
+    height: 2px;
+    border: none;
+    background-color: #d9dbe0;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,39 @@
+.sejarah{
+    margin-top: 100px;
+}
+
+.container-sejarah{
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding: 20px 40px;
+    justify-content: center;
+    display: flex;
+}
+
+.container-sejarah img{
+    object-fit: cover;
+}
+
+.content-sejarah{
+    /* margin-left: 40px; */
+    padding: 0px 30px;
+}
+
+.content-sejarah h2{
+    color: #263159;
+    margin-top: 10px;
+}
+
+.container-sejarah p{
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 510px) {
+    .container-sejarah{
+        flex-wrap: wrap;
+    }
+
+    .container-sejarah img{
+        width: 90%;
+    }
+}

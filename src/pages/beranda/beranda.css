@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* HERO */
+
+.beranda-container{
+    /* padding-top: 168px; */
+}
+
+.hero-beranda{
+    /* position: relative; */
+    height: 500px;
+    /* overflow: hidden; */
+    background: url("../../assets/gallery/pict1.jpg") no-repeat center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.container-beranda{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    color: #263159; */
+    /* max-width: 500px; */
+    justify-content: flex-start;
+    align-items: center;
+    padding: 13rem 2rem;   
+    color: #263159;
+}
+
+.container-beranda h1{
+    font-size: 57px;
+    font-family: 'Yeseva One';
+}
+
+.more-beranda a{
+    background-color: #263159;
+    padding: 9px 30px;
+    margin: 10px;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    max-width: max-content;
+    align-items: center;
+    gap: 6px;
+}
+
+.more-beranda a:hover{
+    background-color: #161c31;
+    transition: 0.5s;
+}
+
+/* SLIDER */
+.container {
+    width: 700px;
+    height: 390px;
+    /* margin: 0 auto; */
+    /* margin-top: 20px; */
+    margin: 350px auto;
+    margin-bottom: 0px;
+}
+
+.containerStyles{
+    width: 700px;
+    height: 400px;
+    margin: 0px auto;
+    margin-bottom: 32px;
+    margin-top: 20px;
+}
+
+.containerStyles h2{
+    font-size: 30px;
+    width: 50%;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    color: #263159;
+    text-align: center;
+    /* align-items: center; */
+    justify-items: center;
+    display: flex;
+}
+
+/* KEUNGGULAN */
+
+.title-fasilitas h5{
+    color: #2CB9CC;
+    font-family: 'Yeseva One';
+    font-size: 18px;
+    text-align: center;
+}
+
+.title-fasilitas h2{
+    color: #263159;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+.fasilitas{
+    padding-top: 130px;
+}
+
+.box-fasilitas{
+    margin: 30px;
+}
+
+.container-fasilitas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin-top: -10px; */
+}
+
+.keunggulan{
+    height: 350px;
+    width: 350px;
+    background-color: #D1E8E4;
+    border-radius: 5%;
+    /* margin: 30px auto; */
+    margin-bottom: 80px;
+
+}
+
+.box-fasilitas:hover .keunggulan {
+    background: linear-gradient(to bottom right, #3cbbcc, #1a6c76);
+    color: #D1E8E4;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.keunggulan h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    color: #263159;
+}
+
+.box-fasilitas:hover .keunggulan h2{
+    color: #D1E8E4;
+    transition: 0.5s;
+}
+
+.keunggulan p{
+    text-align: center;
+}
+
+.keunggulan img{
+    padding-left: 100px;
+    align-items: center;
+    padding-top: 25px;
+    width: 45%;
+    justify-content: center;
+}
+
+.fasilitas_detail{
+    padding-left: 35px;
+}
+
+.fasilitas_detail a{
+    background-color: #2CB9CC;
+    padding-left: 20px;
+    padding: 6px 20px;
+    margin: 10px;
+    color: #D1E8E4;
+    border-radius: 10%;
+    text-decoration: none;
+    display: flex;
+    max-width: max-content;
+    align-items: center;
+    gap: 5px;
+}
+
+.box:hover .fasilitas_detail a{
+    color: #263159;
+    cursor: pointer;
+    background-color: #D1E8E4;
+    transition: 0.3s;
+}
+
+
+
+
+/* EDUKASI */
+
+.edukasi{
+    /* background-color: #f7fafa; */
+    background: linear-gradient(#ffffff, #ecf0f0 );
+    padding: 40px 10px;
+}
+
+.box-edukasi{
+    width: 25%;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    border-right: 1px #9bccc4 solid;
+}
+
+.image-edukasi img{
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.title-edukasi h2{
+    color: #263159;
+    text-align: center;
+    font-size: 35px;
+    margin-top: -30px;
+    margin-bottom: 25px;
+}
+
+.container-edukasi{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+
+.news{
+    display: block;
+    justify-content: center;
+}
+
+.content-edukasi h2{
+    font-size: 20px;
+    color: #263159;
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 9px;
+    text-align: center;
+}
+
+.content-edukasi{
+    display: block;
+    justify-content: center;
+}
+
+.content-edukasi p{
+    margin: 0;
+    /* padding-top: 6px; */
+    color: #808289;
+    font-size: 16px;
+    line-height: 200%
+}
+
+.edukasidetail{
+    display: flex;
+    justify-content: center;
+}
+
+.edukasidetail a{
+    background-color: #263159;
+    padding: 6px 20px;
+    margin: 10px;
+    color: #D1E8E4;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    max-width: max-content;
+    align-items: center;
+    gap: 5px;
+}
+
+.edukasidetail a:hover{
+    background-color: #D1E8E4;
+    color: #263159;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 510px) {
+    .container-fasilitas{
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .box-fasilitas{
+        margin: -10px;
+    }
+
+    .box-edukasi{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+

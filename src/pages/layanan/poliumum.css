@@ -1,0 +1,12 @@
+.content-poliumum{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-poliumum img{
+    border-radius: 10px;
+    margin: 20px;
+}
