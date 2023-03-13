@@ -1,12 +1,235 @@
-.content-poliumum{
-    margin-top: 100px;
-    margin-bottom: 50px;
-    padding: 20px 80px;
+.layanan {
+    margin: 50px;
+}
+
+.box-layanan {
+    padding: 30px;
+    padding-bottom: 0px;
+}
+
+.container-layanan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin-top: -10px; */
+}
+
+.detail-layanan {
+    height: 200px;
+    width: 200px;
+    background-color: #D1E8E4;
+    border-radius: 5%;
+    /* margin: 30px auto; */
+    margin-bottom: 80px;
+
+}
+
+.icon-layanan img {
     display: flex;
     justify-content: center;
 }
 
-.content-poliumum img{
+.box-layanan:hover .button-layanan a {
+    background-color: #D1E8E4;
+    transition: 0.5s;
+    color: #263159;
+}
+
+.box-layanan:hover .detail-layanan {
+    background: linear-gradient(to bottom right, #3cbbcc, #1a6c76);
+    color: #D1E8E4;
+    /* cursor: pointer; */
+    transition: 0.5s;
+}
+
+
+
+.title-layanan {
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.detail-layanan h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    color: #263159;
+    display: flex;
+    justify-content: center;
+}
+
+.detail button {
+    /* margin-left: 53px; */
+}
+
+.box-layanan:hover .detail-layanan h2 {
+    color: #D1E8E4;
+    transition: 0.5s;
+}
+
+.detail-layanan p {
+    text-align: center;
+}
+
+.icon-layanan {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-layanan img {
+    /* padding-left: 70px; */
+    /* align-items: center; */
+    padding-top: 25px;
+    width: 42%;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+/* .detail-layanan img {
+    padding-left: 70px;
+    align-items: center;
+    padding-top: 25px;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+} */
+
+.poliumum_detail {
+    padding-left: 35px;
+}
+
+.poliumum_detail a {
+    background-color: #2CB9CC;
+    padding-left: 20px;
+    padding: 6px 20px;
+    margin: 10px;
+    color: #D1E8E4;
+    border-radius: 10%;
+    text-decoration: none;
+    display: flex;
+    max-width: max-content;
+    align-items: center;
+    gap: 5px;
+}
+
+.box:hover .poliumum_detail a {
+    color: #263159;
+    background-color: #D1E8E4;
+    transition: 0.3s;
+}
+
+.button-layanan {
+    display: flex;
+    justify-content: center;
+}
+
+.button-layanan a {
+    background-color: #263159;
+    padding: 6px 10px;
+    margin: 5px;
+    color: #D1E8E4;
     border-radius: 10px;
-    margin: 20px;
+    text-decoration: none;
+    display: flex;
+    max-width: max-content;
+    align-items: center;
+}
+
+
+
+
+
+
+.content-dokter {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.layanan h2 {
+    color: #263159;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* DETAIL POLIUMUM */
+
+.container-detailpoliumum {
+    margin: 50px;
+}
+
+.content-detailpoliumum {
+    /* position: relative;
+    height: 100%; */
+}
+
+.desc-poliumum {
+    margin-left: 40px;
+    display: contents;
+}
+
+.desc-poliumum h2 {
+    font-size: 35px;
+    color: #263159;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.desc-poliumum p{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-detailpoliumum p {
+    /* padding-left: 40px; */
+    margin-top: 20px;
+    display: flex;
+    max-width: 800;
+    /* justify-content: center; */
+}
+
+/* .image-detail {
+    width: 700px;
+    height: 500px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.image-detail img {
+  
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 32%) 0px 7px 19px 0px;
+} */
+
+.image-details {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+}
+
+.image-detail {
+    width: 700px;
+    height: 500px;
+    /* border: solid red; */
+}
+
+.img-detail-layanan {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 32%) 0px 7px 19px 0px;
 }

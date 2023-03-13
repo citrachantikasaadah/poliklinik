@@ -1,119 +1,293 @@
-/* 
-
-.container-edukasi-style{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 50px;
-    margin-top: 100px;
+.content-edukasi h2 {
+  font-size: 20px;
+  color: #263159;
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 9px;
+  /* text-align: center; */
+  font-weight: 700;
 }
 
-.news{
-    border-left: 1px #9bccc4 solid;
+.content-edukasi {
+  display: block;
+  justify-content: center;
 }
 
-.news h2{
-    font-size: 25px;
-    color: #263159;
-    text-align: center;
+.content-edukasi p {
+  margin: 0;
+  /* padding-top: 6px; */
+  color: #808289;
+  font-size: 16px;
+  line-height: 30px;
 }
 
-.news img{
-    width:70%;
-    padding-left: 50px;
+.edukasi {
+  /* background-color: #f7fafa; */
+  /* background: linear-gradient(#ffffff, #ecf0f0); */
+  /* margin: 50px; */
 }
 
-.news p{
-    width: 80%;
-    padding-left: 50px;
-    text-align: center;
+.content-edukasi-content{
+ 
 }
 
-.edukasidetail{
-    padding-left: 140px;
+.box-edukasi {
+  width: 30%;
+  height: max-content;
+  /* border-radius: 30px; */
+  overflow: hidden;
+  padding: 20px;
+  /* text-align: center; */
+  border-right: 1px solid #9bccc4;
+  margin-bottom: 25px;
 }
 
-.edukasidetail a{
-    background-color: #D1E8E4;
-    padding: 6px 20px;
-    margin: 10px;
-    color: #263159;
-    border-radius: 10%;
-    text-decoration: none;
-    display: flex;
-    max-width: max-content;
-    align-items: center;
-    gap: 5px;
+.image-edukasi img {
+  object-fit: cover;
+  /* border: 1px solid #dedede;
+  padding: 5px; */
 }
 
-.edukasidetail a:hover{
-    background-color: #263159;
-    color: #D1E8E4;
-    transition: 0.5s;
-} */
+.title-edukasi h2 {
+  color: #263159;
+  text-align: center;
+  font-size: 35px;
+  margin-top: -30px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.container-edukasi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* margin-bottom: 50px; */
+  flex-wrap: wrap;
+}
+
+
+.news {
+  display: block;
+  justify-content: center;
+}
+
+
+.edukasidetail {
+  display: flex;
+  margin-left: -10px;
+  /* justify-content: center; */
+}
+
+.edukasidetail a {
+  background-color: #263159;
+  padding: 6px 20px;
+  margin: 10px;
+  color: #D1E8E4;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  max-width: max-content;
+  align-items: center;
+  gap: 5px;
+}
+
+.edukasidetail a:hover {
+  background-color: #D1E8E4;
+  color: #263159;
+  transition: 0.5s;
+}
+
+.image-blog {
+  /* width: 50%; */
+}
+
+.image-blog img {
+  /* width: 100%; */
+}
+
+img {
+  max-width: 100%;
+}
+
+.edukasi-blog {
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 1000px;
+
+}
+
+.post-blog {
+  display: grid;
+  grid-template-columns: .6fr 1.2fr;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.post-blog .text-blog h2 {
+  color: #263159;
+  margin: 0;
+  font-weight: 600;
+}
+
+.des-blog {
+  margin-top: 20px;
+}
+
+.post-blog .image-blog {
+  border: 1px solid #dedede;
+  padding: 5px;
+}
+
+.read-more-edukasi{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.read-more-edukasi .read{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #263159;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.read-more-edukasi .read:hover{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 510px) {
+  .container-fasilitas {
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .box-fasilitas {
+    margin: -10px;
+  }
+
+  .box-edukasi {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+/* EDUKASI DETAIL */
+
+.content-edukasi-detail {
+  margin: 50px;
+}
+
+.content-edukasi-detail p {
+  color: #263159;
+  text-align: justify;
+}
+
+.content-edukasi-content {
+  margin-top: 30px;
+  display: flex;
+  margin-left: 50px;
+}
+
+.content-detail {
+  display: block;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+
+.content-detail img {
+  /* margin-right: 30px; */
+  margin-bottom: 30px;
+}
+
+.content-detail h2 {
+  color: #263159;
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  /* max-width: 50%; */
+}
+
+.content-detail p {
+  /* word-spacing: 10px; */
+}
+
+.content-edukasi-content img {
+  /* border-radius: 20px; */
+}
 
 .my-products {
-    flex: 3.3;
-    /* border: 1px solid green; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  
+  flex: 3.3;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
 }
 
-.product{
-    width: 350px;
-    height: auto; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    margin-right: 24px;
-    transition: all 0.3s ease-in-out;
-    padding: 12px;
-    border-radius: 10px; 
+.product {
+  width: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-right: 24px;
+  transition: all 0.3s ease-in-out;
+  padding: 12px;
+  border-radius: 10px;
 }
 
-@media(min-width: 768px){
-    .product{
-      width: 300px;
-    }
+.link-back {
+  color: #7895B2;
+  transition: 0.5s;
+}
+
+@media(min-width: 768px) {
+  .product {
+    width: 300px;
   }
-  
-  .product .product-img{
-    width: 180px;
-    height: 215px;  
-  }
-  
-  .product .product-img img{
-    width: 100%;
-    height: 100%;
-  }
-  
-  .product .product-text{
-    margin-bottom: 10px;
-    font-size: 16px;
-    text-align: center;  
-  }
-  
-  .product .product-text.title{
-    color: #7895B2;  
-    font-weight: 600;
-    font-size: 20px;
-    margin-top: 10px;
-  }
-  
-  .product .product-text.description{
-    height: 50px;
-    overflow: hidden;
-  }
-  
-  .product .product-text.price{
-    font-weight: 600;
-  }
-  
-  .product .product-text.cart-price{
-    font-weight: 600;
-    color: #7895B2;
-  }
+}
+
+.product .product-img {
+  width: 180px;
+  height: 215px;
+}
+
+.product .product-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.product .product-text {
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.product .product-text.title {
+  color: #7895B2;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.product .product-text.description {
+  height: 50px;
+  overflow: hidden;
+}
+
+.product .product-text.price {
+  font-weight: 600;
+}
+
+.product .product-text.cart-price {
+  font-weight: 600;
+  color: #7895B2;
+}

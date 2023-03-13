@@ -1,8 +1,20 @@
 .tentangkamiLayanan{
+    width: 14rem;
+    position: fixed;
+    overflow: hidden;
+    top: 170px;
+    list-style: none;
+    text-align: start;
+    border-radius: 5px;
+    background-color: white;
+    z-index: 2;
+}
+
+.tentangkamiLayanan-cms{
     width: 12.5rem;
     position: fixed;
     overflow: hidden;
-    top: 174px;
+    top: 80px;
     list-style: none;
     text-align: start;
     border-radius: 5px;
@@ -11,17 +23,11 @@
 }
 
 .tentangkamiLayanan:hover .submenuitem{
-
-    /* -webkit-transition: all .5s, background, 2s .5s linear; */
     transition: all .5s, background 2s .5s linear;
 }
 
 .tentangkamiLayanan li {
     cursor: pointer;
-
-
-    /* transition: 3s ease-out; */
-
 }
 
 .tentangkamiLayanan li a{
@@ -29,49 +35,37 @@
 }
 
 .tentangkamiLayanan li a:hover{
-    color: white;
+    /* color: white; */
+    color: #8293d1;
 }
 
 .tentangkamiLayanan li:hover {
-    background-color: #263159;
-    /* color: white; */
+    
     border-radius: 5px;
     transition: 0.5s;
 }
 
 .tentangkamiClicked {
     display: none;
-    /* transition: 0.5s; */
 }
 
 .submenuitem {
-    /* display: none; */
     display: block;
     width: 100%;
     height: 100%;
-    /* text-decoration: none; */
-    /* color: #2CB9CC; */
     padding: 10px;
-    /* background-color: #a3d8df; */
 }
-
-/* .submenuitem:hover {
-    background: #21909e;
-    color: white;
-} */
-
 
 @media screen and (max-width: 510px){
     .tentangkamiLayanan{
         top: 410px;
-        /* margin-right: -10px; */
     }
 }
 .tentangkami{
     width: 12.5rem;
     position: fixed;
     overflow: hidden;
-    top: 174px;
+    top: 170px;
     list-style: none;
     text-align: start;
     border-radius: 5px;
@@ -80,17 +74,11 @@
 }
 
 .tentangkami:hover .submenuitem{
-
-    /* -webkit-transition: all .5s, background, 2s .5s linear; */
     transition: all .5s, background 2s .5s linear;
 }
 
 .tentangkami li {
     cursor: pointer;
-
-
-    /* transition: 3s ease-out; */
-
 }
 
 .tentangkami li a{
@@ -98,41 +86,27 @@
 }
 
 .tentangkami li a:hover{
-    color: white;
+    color: #8293d1;
 }
 
 .tentangkami li:hover {
-    background-color: #263159;
-    /* color: white; */
     border-radius: 5px;
     transition: 0.5s;
 }
 
 .tentangkamiClicked {
     display: none;
-    /* transition: 0.5s; */
 }
 
 .submenuitem {
-    /* display: none; */
     display: block;
     width: 100%;
     height: 100%;
-    /* text-decoration: none; */
-    /* color: #2CB9CC; */
     padding: 10px;
-    /* background-color: #a3d8df; */
 }
-
-/* .submenuitem:hover {
-    background: #21909e;
-    color: white;
-} */
-
 
 @media screen and (max-width: 510px){
     .tentangkami{
         top: 362px;
-        /* margin-right: -10px; */
     }
 }

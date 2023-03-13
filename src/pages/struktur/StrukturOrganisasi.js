@@ -24,16 +24,22 @@
 import React from 'react'
 import { Struktur } from '../../assets'
 import Back from '../../components/back/backTentangKami'
+import Footer from '../../components/foot/Footer'
+import Header from '../../components/head/Header'
 import "./struktur.css"
 
 const StrukturOrganisasi = () => {
   return (
-    <div>
-      <Back title="Struktur"/>
-      <div className='container-struktur'>
-          <img width= {500} src={Struktur}/>
+    <>
+    <Header/>
+      <div>
+        <Back title="Struktur Organisasi" />
+        <div className='container-struktur'>
+          <img width={500} src={Struktur} />
+        </div>
       </div>
-    </div>
+      <Footer/>
+    </>
   )
 }
 

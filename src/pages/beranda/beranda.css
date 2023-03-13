@@ -1,17 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    
+
 }
+
+h2 {
+    font-weight: 700;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* HERO */
 
-.beranda-container{
+.beranda-container {
     /* padding-top: 168px; */
 }
 
-.hero-beranda{
+.hero-beranda {
     /* position: relative; */
     height: 500px;
     /* overflow: hidden; */
@@ -20,7 +28,7 @@
     z-index: 1;
 }
 
-.container-beranda{
+.container-beranda {
     /* position: absolute;
     top: 50%;
     left: 50%;
@@ -30,16 +38,17 @@
     /* max-width: 500px; */
     justify-content: flex-start;
     align-items: center;
-    padding: 13rem 2rem;   
+    padding: 13rem 2rem;
     color: #263159;
 }
 
-.container-beranda h1{
+.container-beranda h1 {
+    text-align: start;
     font-size: 57px;
     font-family: 'Yeseva One';
 }
 
-.more-beranda a{
+.more-beranda a {
     background-color: #263159;
     padding: 9px 30px;
     margin: 10px;
@@ -52,7 +61,7 @@
     gap: 6px;
 }
 
-.more-beranda a:hover{
+.more-beranda a:hover {
     background-color: #161c31;
     transition: 0.5s;
 }
@@ -67,15 +76,15 @@
     margin-bottom: 0px;
 }
 
-.containerStyles{
+.containerStyles {
     width: 700px;
     height: 400px;
     margin: 0px auto;
-    margin-bottom: 32px;
+    margin-bottom: 62px;
     margin-top: 20px;
 }
 
-.containerStyles h2{
+.containerStyles h2 {
     font-size: 30px;
     width: 50%;
     margin: 0px auto;
@@ -85,40 +94,106 @@
     /* align-items: center; */
     justify-items: center;
     display: flex;
+    font-weight: 700;
+}
+
+.container-slide {
+    overflow: hidden;
+    position: relative;
+    width: 500px;
+    height: 480px;
+    margin: 0 auto;
+}
+
+.container-slides {
+    display: flex;
+    transition-duration: 500;
+    transition: ease-out;
+
+}
+
+.arrow {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.button-arrow {
+    padding: 1px;
+    height: 43px;
+    border-radius: 9999px;
+    color: #161c31;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.slides {
+    position: absolute;
+    bottom: 4px;
+    right: 0px;
+    left: 0px;
+}
+
+.slides-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.img {
+    transition-property: all;
+    border-radius: 9999px;
+}
+
+.slidess {
+    padding: 10px;
+}
+
+.img-sld {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
 }
 
 /* KEUNGGULAN */
 
-.title-fasilitas h5{
+.title-fasilitas h5 {
     color: #2CB9CC;
     font-family: 'Yeseva One';
     font-size: 18px;
     text-align: center;
 }
 
-.title-fasilitas h2{
+.title-fasilitas h2 {
     color: #263159;
     text-align: center;
     font-size: 35px;
     margin-top: 40px;
+    font-weight: 700;
 }
 
-.fasilitas{
+.fasilitas {
     padding-top: 130px;
 }
 
-.box-fasilitas{
+.box-fasilitas {
     margin: 30px;
 }
 
-.container-fasilitas{
+.container-fasilitas {
     display: flex;
     flex-direction: row;
     justify-content: center;
     /* margin-top: -10px; */
 }
 
-.keunggulan{
+.keunggulan {
     height: 350px;
     width: 350px;
     background-color: #D1E8E4;
@@ -135,35 +210,45 @@
     transition: 0.5s;
 }
 
-.keunggulan h2{
+h2 {
+    font-weight: 800;
+}
+
+.keunggulan h2 {
     text-align: center;
     padding: 20px;
     font-size: 24px;
     color: #263159;
+    font-weight: 700;
 }
 
-.box-fasilitas:hover .keunggulan h2{
+.box-fasilitas:hover .keunggulan h2 {
     color: #D1E8E4;
     transition: 0.5s;
 }
 
-.keunggulan p{
+.keunggulan p {
     text-align: center;
 }
 
-.keunggulan img{
-    padding-left: 100px;
-    align-items: center;
-    padding-top: 25px;
-    width: 45%;
+.keunggulan-img {
+    display: flex;
     justify-content: center;
 }
 
-.fasilitas_detail{
+.keunggulan-img img {
+    /* padding-left: 100px; */
+    /* align-items: center; */
+    padding-top: 25px;
+    width: 45%;
+    /* justify-content: center; */
+}
+
+.fasilitas_detail {
     padding-left: 35px;
 }
 
-.fasilitas_detail a{
+.fasilitas_detail a {
     background-color: #2CB9CC;
     padding-left: 20px;
     padding: 6px 20px;
@@ -177,119 +262,30 @@
     gap: 5px;
 }
 
-.box:hover .fasilitas_detail a{
+.box:hover .fasilitas_detail a {
     color: #263159;
     cursor: pointer;
     background-color: #D1E8E4;
     transition: 0.3s;
 }
 
+/* Whatsapp */
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* button */
+.btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
 
 
 
 /* EDUKASI */
-
-.edukasi{
-    /* background-color: #f7fafa; */
-    background: linear-gradient(#ffffff, #ecf0f0 );
-    padding: 40px 10px;
-}
-
-.box-edukasi{
-    width: 25%;
-    border-radius: 30px;
-    overflow: hidden;
-    padding: 20px;
-    text-align: center;
-    border-right: 1px #9bccc4 solid;
-}
-
-.image-edukasi img{
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.title-edukasi h2{
-    color: #263159;
-    text-align: center;
-    font-size: 35px;
-    margin-top: -30px;
-    margin-bottom: 25px;
-}
-
-.container-edukasi{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
-}
-
-
-.news{
-    display: block;
-    justify-content: center;
-}
-
-.content-edukasi h2{
-    font-size: 20px;
-    color: #263159;
-    margin: 0;
-    margin-top: 12px;
-    margin-bottom: 9px;
-    text-align: center;
-}
-
-.content-edukasi{
-    display: block;
-    justify-content: center;
-}
-
-.content-edukasi p{
-    margin: 0;
-    /* padding-top: 6px; */
-    color: #808289;
-    font-size: 16px;
-    line-height: 200%
-}
-
-.edukasidetail{
-    display: flex;
-    justify-content: center;
-}
-
-.edukasidetail a{
-    background-color: #263159;
-    padding: 6px 20px;
-    margin: 10px;
-    color: #D1E8E4;
-    border-radius: 10px;
-    text-decoration: none;
-    display: flex;
-    max-width: max-content;
-    align-items: center;
-    gap: 5px;
-}
-
-.edukasidetail a:hover{
-    background-color: #D1E8E4;
-    color: #263159;
-    transition: 0.5s;
-}
-
-@media screen and (max-width: 510px) {
-    .container-fasilitas{
-        flex-wrap: wrap;
-        margin-top: 20px;
-    }
-
-    .box-fasilitas{
-        margin: -10px;
-    }
-
-    .box-edukasi{
-        flex-wrap: wrap;
-        width: 100%;
-    }
-}
-

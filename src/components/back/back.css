@@ -26,12 +26,13 @@
 }
 
 .hero a{
-    font-size: 20px;
-    background-color: #263159;
+    font-size: 15px;
+   color: #263159;
+   text-decoration: none;
 }
 
 .hero p{
-    padding-top: 10px;
+    /* padding-top: 10px; */
     text-align: center;
     font-size: 15px;
 }
@@ -39,4 +40,8 @@
 .hero p a{
     text-decoration: none;
     background-color: none;
+}
+
+.back-link{
+    background: none;
 }

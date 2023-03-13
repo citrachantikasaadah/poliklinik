@@ -17,16 +17,16 @@ function Dropdown() {
             title: "VisiMisi",
             path: "/VisiMisi",
         },
-        {
-            id: 3,
-            title: "Struktur Organisasi",
-            path: "/StrukturOrganisasi",
-        },
-        {
-            id: 4,
-            title: "Jadwal",
-            path: "/Jadwal",
-        },
+        // {
+        //     id: 3,
+        //     title: "Struktur Organisasi",
+        //     path: "/StrukturOrganisasi",
+        // },
+        // {
+        //     id: 4,
+        //     title: "Jadwal",
+        //     path: "/Jadwal",
+        // },
     ];
 
     return (

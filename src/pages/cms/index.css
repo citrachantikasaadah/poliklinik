@@ -1,8 +1,357 @@
-.error-msg{
-    width: 100%;
-    padding: 14px;
-    background-color: #f0d0d3;
-    color: #df786f;
-  }
+.welcome {
+  display: flex;
+  justify-content: center;
+}
 
-  
+.welcome h1 {
+  width: 50%;
+  font-size: 30px;
+}
+
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group span {
+  margin-top: 20px;
+  color: red;
+}
+
+.add {
+  margin: 50px;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.image-preview {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image-preview {
+  width: 300px;
+  height: 300px;
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-preview-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.image-preview-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  color: #263159;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+  /* margin-top: 20px; */
+}
+
+.error-msg {
+  width: 50%;
+  padding: 14px;
+  background-color: #f0d0d3;
+  color: #df786f;
+}
+
+.scc-msg {
+  display: flex;
+  justify-content: center;
+}
+
+.success-msg {
+  width: 50%;
+  padding: 14px;
+  background-color: #dff0d8;
+  color: #468847;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 13px;
+  font-weight: 600;
+  color: #263159;
+}
+
+.form-group {
+  margin-top: 40px;
+  /* margin-bottom: 50px; */
+  display: grid;
+  justify-items: center;
+  padding: 10px 40px;
+}
+
+.form-group input:focus {
+  border: 2px solid #a3b8ce;
+
+}
+
+.jadwal {
+  display: flex;
+}
+
+.jadwal-dokter {
+  /* max-width: 75%; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+
+.jadwal-dokter input {
+  width: 100%;
+  margin: 5px;
+  display: block;
+  outline: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  /* color: #212529; */
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+
+input.form-control {
+  display: block;
+  outline: none;
+  width: 50%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  /* color: #212529; */
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+select.form-control {
+  display: block;
+  outline: none;
+  width: 50%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  /* color: #212529; */
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input.form-control-login {
+  display: block;
+  outline: none;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  /* color: #212529; */
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.post-css {
+  display: flex;
+  justify-content: space-around;
+  /* margin-left: 20px; */
+}
+
+.radio-css {
+  margin-left: 20px;
+}
+
+textarea.form-control {
+  display: block;
+  width: 50%;
+  height: 200px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control textarea :focus {
+  border: 5px solid #a3b8ce;
+
+}
+
+
+
+
+button {
+  background-color: #2CB9CC;
+  border: none;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.form-control[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
+
+/* edukasi pages */
+
+.styled-table {
+  border-collapse: collapse;
+  margin: auto;
+  font-size: 0.9em;
+  /* max-width: 800px; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #fff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.btn-edukasi {
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 4px 1px;
+  cursor: pointer;
+  /* width: 62px; */
+}
+
+.btn-edit-edukasi {
+  background-color: #008cba;
+
+}
+
+.btn-delete-edukasi {
+  background-color: #f44336;
+}
+
+.btn-delete-edukasi:hover {
+  background-color: #db281b;
+}
+
+.btn-view-edukasi {
+  background-color: #e7e7e7;
+  color: black;
+}
+
+.btn-view-create {}
+
+.btn-edukasis {
+  border-collapse: collapse;
+  margin: auto;
+  font-size: 0.9em;
+  /* max-width: 800px; */
+  margin-bottom: 10px;
+}
+
+/* view edukasi */
+
+.card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  align-content: center;
+  margin: 0 auto;
+}
+
+.card-header {
+  /* height: 40%; */
+  /* background-color: #5d6770; */
+  color: white;
+  text-align: center;
+
+}
+
+/* .card-header h1{
+  color: white;
+} */
+
+.container-view {
+  padding: 6px 25px;
+  display: grid;
+}
+
+.container-view span {
+  margin-top: 6px;
+}
+
+.container-view strong {
+  color: #263159;
+}
+
+.ex1 {
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.jadwal-dokter-pages {
+  display: table-caption;
+  width: 200px;
+}

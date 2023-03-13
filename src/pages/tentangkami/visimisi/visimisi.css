@@ -17,7 +17,7 @@
 
 .container-visimisi img{
     float: right ;
-    margin-left: 70px;
+    /* margin-left: 70px; */
     margin-top: 20px;
     box-shadow: rgba(149, 157, 165, 70%) 0px 5px 20px;
     border-radius: 20px;
@@ -27,11 +27,15 @@
     text-align: center;
     color: #263159;
     margin-top: 10px;
-    margin-right: 100px;
 }
 
 .content-visimisi h2{
     margin-top: 20px;
+    font-weight: 600;
+}
+
+.content-visimisi p {
+    max-width: 700px;
 }
 
 .content-visimisi hr{

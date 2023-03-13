@@ -1,5 +1,5 @@
 import React from "react"
-import { useLocation } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import "./back.css";
 import { back } from "../../assets"
 import Beranda from "../../pages/beranda/Beranda"
@@ -14,7 +14,12 @@ function Back({ title }) {
                 <section className="hero">
                     {/* <img src={back} alt="" /> */}
                     <h1>{title}</h1>
-                    <p>Home / Tentang Kami / {location.pathname.split("/")[1]}</p>
+                    <div>
+                        <Link to="/">Home</Link>
+                        <Link to="/">Home</Link>
+                        <Link to="/">Home</Link>
+                    </div>
+                    {/* <p>Home / Tentang Kami / {location.pathname.split("/")[1]}</p> */}
 
                 </section>
             </div>

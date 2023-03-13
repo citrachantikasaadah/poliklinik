@@ -120,16 +120,19 @@ import { FaBars, FaTimes } from "react-icons/fa"
 
 import React from 'react'
 import { useRef, useState } from "react"
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import "./header.css"
 import DropdownLayanan from "../dropdown/DropdownLayanan"
 import DropdownTeam from "../dropdown/DropdownTeam"
 import DropdownTentangKami from "../dropdown/DropdownTentangKami"
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+
 
 const Navbar = () => {
 
     const [dropdown, setDropdown] = useState(false);
-    const [dropdownteam, setDropdownTeam] = useState(false);
+    // const [dropdownteam, setDropdownTeam] = useState(false);
     const [dropdownlayanan, setDropdownTeamLayanan] = useState(false);
 
     const navItems = [
@@ -160,12 +163,12 @@ const Navbar = () => {
         {
             id: 5,
             title: "Edukasi",
-            path: "/edukasiHome",
+            path: "/Edukasi",
             cName: "nav-item"
         },
         {
             id: 7,
-            title: "Galeri CSR",
+            title: "Galeri",
             path: "/galeri",
             cName: "nav-item"
         },
@@ -188,6 +191,7 @@ const Navbar = () => {
         <header>
             <nav ref={navRef}>
                 <ul className='navItems'>
+                    
                     {navItems.map((item) => {
                         if (item.title === "Tentang Kami") {
                             return (
@@ -199,20 +203,6 @@ const Navbar = () => {
                                 >
                                     <Link to={item.path} >{item.title}<MdKeyboardArrowDown /></Link>
                                     {dropdown && <DropdownTentangKami />}
-                                </li>
-                            )
-                        }
-
-                        if (item.title === "Team") {
-                            return (
-                                <li
-                                    key={item.id}
-                                    className='navItem'
-                                    onMouseEnter={() => setDropdownTeam(true)}
-                                    onMouseLeave={() => setDropdownTeam(false)}
-                                >
-                                    <Link to={item.path} >{item.title}<MdKeyboardArrowDown /></Link>
-                                    {dropdownteam && <DropdownTeam />}
                                 </li>
                             )
                         }
@@ -232,18 +222,10 @@ const Navbar = () => {
                         }
                         return (
                             <li key={item.id} className='navItem'>
-                                <Link to={item.path} className='dropdown'>{item.title}</Link>
+                                <Link to={item.path} className='active-link'>{item.title}</Link>
                             </li>
                         )
                     })}
-                    {/* <li>
-                        <Link to="/">Beranda</Link>
-                        <Link to="/">Tentang Kami</Link>
-                        <Link to="/">Layanan</Link>
-                        <Link to="/">Beranda</Link>
-                        <Link to="/">Beranda</Link>
-                        <Link to="/">Beranda</Link>
-                    </li> */}
                 </ul>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes />

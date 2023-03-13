@@ -3,15 +3,22 @@
 }
 
 .container-sejarah{
-    margin-top: 20px;
-    margin-bottom: 60px;
+    margin: 50px;
     padding: 20px 40px;
-    justify-content: center;
-    display: flex;
+    /* justify-content: center; */
+    /* display: flex; */
 }
 
-.container-sejarah img{
+/* .container-sejarah img{
     object-fit: cover;
+    width: 90%;
+} */
+
+.sejarah-img{
+    justify-content: center;
+    display: flex;
+    /* width: 500px; */
+    height: 280px;
 }
 
 .content-sejarah{
@@ -22,10 +29,28 @@
 .content-sejarah h2{
     color: #263159;
     margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
 }
 
 .container-sejarah p{
     margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.container-sejarah h2{
+    color: #263159;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.container-sejarah h4{
+    color: #2CB9CC;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Yeseva One';
+    font-weight: 550;
 }
 
 @media screen and (max-width: 510px) {
